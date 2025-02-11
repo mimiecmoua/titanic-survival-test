@@ -34,10 +34,10 @@
                         <img src="img/homme-femme.png" alt="Homme et Femme" class="img-fluid" style="max-width: 150px;" height="100px" width="100px">
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-dark w-100 py-2">woman</button>
+                        <button id="btn-woman" class="btn btn-dark w-100 py-2">Woman</button>
                     </div>
                     <div class="col-6">
-                        <button class="btn btn-dark w-100 py-2">Man</button>
+                        <button id="btn-man" class="btn btn-dark w-100 py-2">Man</button>
                     </div>
                 </div>
         
@@ -48,7 +48,7 @@
                         <img src="img/gateau.png" alt="Montre à gousset" class="img-fluid" style="max-width: 100px;">
                     </div>
                     <div class="col-12">
-                        <input type="number" id="input-age" class="form-control" min="1" max="100" placeholder="Enter your age">
+                        <input type="number" id="input-age" class="form-control" min="1" max="100" placeholder="Enter your age" required>
                     </div>
                     
                 </div>
@@ -62,7 +62,7 @@
                         <img src="img/marque.png" alt="3ème classe" class="img-fluid" style="max-width: 50px;">
                     </div>
                     <div class="col-12">
-                        <select class="form-select">
+                        <select id="select-classe" class="form-select">
                             <option value="1">1er Class</option>
                             <option value="2">2nd Class</option>
                             <option value="3">3nd Class</option>
@@ -81,8 +81,10 @@
                 <div class="row mt-4 w-100">
                     <div class="col-12 d-flex justify-content-center gap-3">
                         <img src="img/le-crane.png" alt="Mort" class="img-fluid" style="max-width: 80px;">
-                        <span class="text-white fs-3">ou</span>
+                        <span class="text-white fs-3">or</span>
                         <img src="img/coeur.png" alt="Survie" class="img-fluid" style="max-width: 80px;">
+                    </div>
+                    <div id="result-message" class="alert alert-light mt-3" style="display: none; font-size: 1.5rem;">
                     </div>
                 </div>
         
@@ -93,7 +95,10 @@
                 <p>Created by <a href="https://mimiecmoua.github.io/portfolio/" class="text-white">webOara</a>.</p>
             </footer>
         </div>
-    
+
+        
+        <script src="script.js"></script>
+
         <!-- Lien Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
