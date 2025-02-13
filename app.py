@@ -52,7 +52,7 @@ def predict():
         # ✅ Faire la prédiction
         input_data = np.array([[classe, sexe, age]])
         prediction = model.predict(input_data)[0]
-        result_message = "You survived! 🎉" if prediction == 1 else "You did not survive... 💀"
+        result_message = "You survived! 💙🛟" if prediction == 1 else "You did not survive... 💀😵"
 
         return jsonify({"message": result_message})
 
