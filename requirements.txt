@@ -1,0 +1,7 @@
+flask
+flask-cors
+flask-limiter
+numpy
+pandas
+scikit-learn
+seaborn
